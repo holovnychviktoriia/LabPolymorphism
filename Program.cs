@@ -23,7 +23,7 @@ class Program
             Console.WriteLine("---");
         }
 
-        Console.WriteLine("\n--- Завдання 2 (варіант 7)---");
+        Console.WriteLine("\n--- Завдання 2 (варіант 7) ---");
         
         List<Instrument> orchestra = new List<Instrument>
         {
@@ -35,6 +35,20 @@ class Program
         foreach (var instrument in orchestra)
         {
             instrument.PlaySound();
+        }
+
+        Console.WriteLine("\n--- Завдання 3 ---");
+        
+        List<Artifact> inventory = new List<Artifact>
+        {
+            new Artifact(1),
+            new AncientSword(2),
+            new MagicScroll(3)
+        };
+
+        foreach (var item in inventory)
+        {
+            item.Identify();
         }
     }
 }
