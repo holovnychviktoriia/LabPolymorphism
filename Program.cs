@@ -22,5 +22,19 @@ class Program
 
             Console.WriteLine("---");
         }
+
+        Console.WriteLine("\n--- Завдання 2 (варіант 7)---");
+        
+        List<Instrument> orchestra = new List<Instrument>
+        {
+            new Piano("Piano 1"),
+            new Guitar("Guitar 1"),
+            new Drums("Drums 1")
+        };
+
+        foreach (var instrument in orchestra)
+        {
+            instrument.PlaySound();
+        }
     }
 }
